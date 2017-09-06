@@ -15,7 +15,7 @@ async function updateDB () {
       throw error
     } else {
       // clear old results
-      Asteroid.collection.drop()
+      // Asteroid.collection.drop()
       const nearEarthObjects = JSON.parse(body).near_earth_objects
       // flatten the response extract the data we need
       const asteroids = Object.values(nearEarthObjects)
