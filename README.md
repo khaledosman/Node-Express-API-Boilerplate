@@ -1,5 +1,6 @@
 # Near-Earth-Object-Web-Service
-Nodejs API that accesses nasa.api.org to find closes asteroids to earth in the past 3 days
+Nodejs API that accesses nasa.api.org to find closes asteroids to earth in the past 3 days.
+Can be used as node-experess Restful API boilerplate
 
 
 
