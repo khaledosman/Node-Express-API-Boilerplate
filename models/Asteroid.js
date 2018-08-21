@@ -10,5 +10,5 @@ const AsteroidSchema = new Schema({
   is_hazardous: Boolean
 })
 
-const Asteroid = db.model('Asteroid', AsteroidSchema, 'asteroids')
+const Asteroid = mongoose.model('Asteroid', AsteroidSchema, 'asteroids')
 module.exports = Asteroid

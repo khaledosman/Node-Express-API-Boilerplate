@@ -4,7 +4,7 @@
   "description": "",
   "main": "clusters.js",
   "scripts": {
-    "start": "node clusters.js",
+    "start": "nodemon --inspect app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,17 +14,18 @@
   "author": "Khaled Osman",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "compression": "^1.7.0",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
     "cors": "^2.8.4",
-    "express": "^5.0.0-alpha.2",
-    "helmet": "^3.8.1",
-    "moment": "^2.18.1",
-    "mongoose": "^4.11.10",
-    "morgan": "^1.8.2",
-    "request": "^2.81.0"
+    "express": "^5.0.0-alpha.6",
+    "helmet": "^3.13.0",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.9",
+    "morgan": "^1.9.0",
+    "request": "^2.88.0"
   },
   "devDependencies": {
-    "standard": "^10.0.3"
+    "nodemon": "^1.18.3",
+    "standard": "^11.0.1"
   }
 }
