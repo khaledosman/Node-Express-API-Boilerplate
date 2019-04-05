@@ -1,12 +1,11 @@
 const moment = require('moment')
 const request = require('request')
-const config = require('../config.json')
 const Asteroid = require('../models/Asteroid')
 
 async function updateDB () {
   const startDate = moment().subtract(3, 'days').format().slice(0, 10)
   const endDate = moment().format().slice(0, 10)
-  const url = `https://api.nasa.gov/neo/rest/v1/feed?start_date=${startDate}&end_date=${endDate}&detailed=true&api_key=${config.API_KEY}`
+  const url = `https://api.nasa.gov/neo/rest/v1/feed?start_date=${startDate}&end_date=${endDate}&detailed=true&api_key=${process.env.API_KEY}`
   await request(url, function (error, response, body) {
     // console.log('error:', error); // Print the error if one occurred
     // console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received

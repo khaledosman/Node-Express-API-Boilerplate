@@ -1,3 +1,4 @@
+require('dotenv').config()
 // external libraries
 const express = require('express')
 const cors = require('cors')
@@ -8,7 +9,6 @@ const helmet = require('helmet')
 const updateDB = require('./helpers/update-db')
 
 // app dependencies
-const config = require('./config.json')
 const app = express()
 
 // setup middlewars
@@ -25,6 +25,6 @@ app.use(require('./controllers'))
 updateDB()
 
 // start the server
-app.listen(config.PORT_NUMBER, () => {
-  console.log('listening to connections on port: ' + config.PORT_NUMBER)
+app.listen(process.env.PORT_NUMBER, () => {
+  console.log('listening to connections on port: ' + process.env.PORT_NUMBER)
 })

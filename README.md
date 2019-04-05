@@ -7,7 +7,7 @@ Can be used as node-experess Restful API boilerplate
 ## How to start the server
 
 1. Run mongodb locally using `mongod`
-2. make sure the ip & port number for mongo are configured correctly in config.json
+2. make sure the ip & port number for mongo are configured correctly in .env
 3. `npm install`
 4. `npm start`
 
