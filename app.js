@@ -22,7 +22,7 @@ app.use(bodyParser.json())
 app.use(require('./controllers'))
 
 // fetch data
-updateDB()
+// updateDB()
 
 // start the server
 app.listen(process.env.PORT_NUMBER, () => {
